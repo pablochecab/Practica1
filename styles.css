@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.puntos {
+    background-color: gold;
+    color: black;
+    font-size: 10pt;
+    height: 3vh;
+}
+
+header {
+    padding: 30px 90px 30px 90px;
+    /* background-image: url(./img/FondoHeader.jfif);
+    background-size: cover; */
+    background-color: rgb(255, 0, 0);
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: green;
+    align-items: center;
+}
+
+.divNav {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.divBuscar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.signUp {
+    border: solid 2px white;
+    padding: 10px;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
