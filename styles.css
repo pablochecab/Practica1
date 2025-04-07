@@ -19,6 +19,20 @@ header {
     justify-content: space-between;
 }
 
+#untitled {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bi-box {
+    font-size: 20pt;
+}
+
+.bi-search {
+    font-size: 15pt;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -26,8 +40,15 @@ nav {
     align-items: center;
 }
 
+.off {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .divNav {
     display: flex;
+    align-items: center;
     gap: 20px;
     color: white;
 }
@@ -186,6 +207,12 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+}
+
+.pCaja {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .pGrid {
