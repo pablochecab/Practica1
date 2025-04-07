@@ -33,6 +33,10 @@ header {
     font-size: 15pt;
 }
 
+.bi-list {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,6 +48,11 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.divPadre {
+    display: flex;
+    gap: 20px;
 }
 
 .divNav {
@@ -192,6 +201,7 @@ footer {
 .sectionFooter1__a2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
@@ -219,7 +229,7 @@ footer {
     padding: 3px;
 }
 
-@media  (min-width: 400px) and (max-width: 800px) {
+@media  (max-width: 800px) {
 
 * {
      margin: 0;
@@ -285,6 +295,16 @@ main {
 
 .sectionFooter3 {
     padding: 1em;
+}
+
+.signUp {
+    display: none;
+}
+
+.bi-list {
+    display: inline;
+    font-size: 20pt;
+    cursor: pointer;
 }
 
 }
