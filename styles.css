@@ -1,19 +1,11 @@
+:root {
+    --color-blanco: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.puntos {
-    background-color: gold;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.puntos-span {
-    color: white;
-    font-size: 20pt;
 }
 
 header {
@@ -21,7 +13,7 @@ header {
     background-image: url(./img/FondoHeader.jfif);
     background-size: cover;
     object-fit: cover;
-    height: 97vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +22,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--color-blanco);
     align-items: center;
 }
 
@@ -38,6 +30,14 @@ nav {
     display: flex;
     gap: 20px;
     color: white;
+}
+
+.divTitulo {
+    display: none;
+}
+
+.imgMain {
+    width: 100%;
 }
 
 .divBuscar {
@@ -48,7 +48,7 @@ nav {
 
 .signUp {
     border: solid 2px white;
-    padding: 10px;
+    padding: 5px 15px;
 }
 
 .sectionHeader {
@@ -68,4 +68,191 @@ nav {
     border-radius: 20px;
     padding: 5px 15px 5px 15px;
     background-color: rgba(255, 255, 255, 0.304);
+}
+
+main {
+    /* Inherit sirve para heredar colores del padre. */
+    padding: 1em; /* Manera de realizar un padding mas limpia, para evitar en la responsividad errores, evitar utilizar px */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 75% 25%;
+    column-gap: 50px;
+}
+
+.section1Main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#section1Main__a2 {
+    border-left: solid 3px black;
+    padding: 5px 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.asideSection1, .asideSection2 {
+    background-color: rgba(7, 7, 7, 0.304);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.asideSection2__img {
+    width: 100%;
+}
+
+.asideButton {
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+}
+
+.section1Main__a5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista {
+    list-style-position: inside;
+}
+
+.elementoLista {
+    padding-left: 10px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionFooter1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.botonFooter {
+    padding: 5px 15px;
+    border: solid 2px black;
+}
+
+.botonFooter2 {
+    background-color: black;
+    color: white;
+}
+
+.footerh2 {
+    font-size: 30pt;
+}
+
+.sectionFooter1__a2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sectionFooter2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas de igual tamaño */
+    grid-template-rows: auto;
+    gap: 20px; 
+}
+
+.sectionFooter3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.pGrid {
+    padding: 3px;
+}
+
+@media  (min-width: 400px) and (max-width: 800px) {
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+header {
+    display: flex;
+    background-position: center;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.off {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionFooter1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionFooter1__a2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonFooter {
+    max-width: 100%;
+}
+
+.divArticle {
+    display: flex;
+    gap: 10px;
+}
+
+.sectionFooter2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionFooter3 {
+    padding: 1em;
+}
+
 }
