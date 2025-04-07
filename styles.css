@@ -13,9 +13,9 @@
 
 header {
     padding: 30px 90px 30px 90px;
-    /* background-image: url(./img/FondoHeader.jfif);
-    background-size: cover; */
-    background-color: rgb(255, 0, 0);
+    background-image: url(./img/FondoHeader.jfif);
+    background-size: cover;
+    object-fit: cover;
     height: 97vh;
     display: flex;
     flex-direction: column;
@@ -50,5 +50,18 @@ nav {
 .sectionHeader {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    width: 65%;
+    color: white;
+}
+
+.sectionHeader__h1 {
+    font-size: 30pt;
+}
+
+.botones__span {
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.304);
 }
